@@ -1,0 +1,70 @@
+Title: KeyLog Compression Library for QMK
+
+Objective:
+The goal of this project is to develop a keylog compression library for QMK keyboards to enable efficient storage of key event logs within the limited EEPROM space. The library will provide various compression techniques, including Run-length encoding (RLE), Variable-length encoding, Dictionary-based compression, and Differential encoding. These techniques can be combined or used individually to maximize the compression ratio, depending on the key event data.
+
+Background:
+QMK keyboards have limited EEPROM storage, making it challenging to store extensive key event logs. Compression techniques can be employed to store more key events in the available space. Different compression methods can be more effective for different types of key event data, and the best results may be obtained by combining several techniques.
+
+Approach:
+The project will be divided into the following stages:
+
+Research and Analysis:
+
+Investigate existing compression techniques and their suitability for key event data.
+Analyze typical key event logs to identify patterns and characteristics that can be exploited by compression algorithms.
+Development of Compression Techniques:
+
+Implement standalone compression and decompression functions for RLE, Variable-length encoding, Dictionary-based compression, and Differential encoding.
+Ensure that each technique is modular and can be easily integrated with other methods.
+Development of Test Environment:
+
+Create a test environment with a diverse set of key event logs.
+Implement performance evaluation metrics, such as compression ratio, processing time, and memory usage.
+Experimentation and Optimization:
+
+Test each compression technique individually and in combination with others to determine the optimal approach for various key event log types.
+Identify the most effective combinations of compression techniques for maximizing storage efficiency.
+Integration with QMK:
+
+Develop a keylog compression library that integrates the chosen techniques into the QMK framework.
+Provide a user-friendly interface to enable users to choose the desired compression method(s) and apply them to their key event logs.
+Documentation and Tutorials:
+
+Document the usage of the library and its functions, including examples and best practices.
+Create tutorials and guides for users who want to integrate the library into their QMK keyboards.
+
+Conclusion:
+The development of a keylog compression library for QMK keyboards has the potential to significantly enhance the storage efficiency of key event logs. By implementing and optimizing various compression techniques, this project aims to provide a flexible and user-friendly solution for managing key event logs in QMK keyboards with limited EEPROM space.
+
+
+
+Assemble your team: Gather a team of developers and researchers with expertise in compression algorithms, C programming, and familiarity with the QMK firmware. (./TeamCharter)
+
+Set up a project management tool: Use a project management tool (e.g., Trello, Asana, or GitHub Projects) to create tasks and track progress for each stage of the project.
+
+Research and Analysis:
+a. Review existing literature and resources on compression techniques, focusing on those mentioned in the proposal.
+b. Collect and analyze key event logs to understand their characteristics and patterns that can be exploited by compression algorithms.
+
+Development of Compression Techniques:
+a. Begin implementation of the standalone compression and decompression functions for each technique mentioned in the proposal.
+b. Implement the techniques in a modular manner to ensure easy integration with other methods.
+
+Development of Test Environment:
+a. Obtain or create a diverse set of key event logs for testing purposes.
+b. Implement performance evaluation metrics such as compression ratio, processing time, and memory usage.
+
+Experimentation and Optimization:
+a. Conduct tests on individual compression techniques and their combinations.
+b. Analyze the results to identify the most effective combinations of compression techniques for maximizing storage efficiency.
+
+Integration with QMK:
+a. Start developing the keylog compression library that integrates the chosen techniques into the QMK framework.
+b. Work on providing a user-friendly interface for users to select and apply the desired compression method(s) to their key event logs.
+
+Documentation and Tutorials:
+a. Document the usage of the library and its functions, including examples and best practices.
+b. Begin creating tutorials and guides for users who want to integrate the library into their QMK keyboards.
+
+Regular progress updates and communication: Ensure that team members regularly communicate and update each other on their progress, challenges, and any changes to the project scope or timeline.
